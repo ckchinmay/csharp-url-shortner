@@ -1,4 +1,4 @@
-using UrlShortenerService.Domain.Common;
+﻿using UrlShortenerService.Domain.Common;
 
 namespace UrlShortenerService.Domain.Entities;
 
@@ -22,6 +22,11 @@ public class Url : BaseAuditableEntity
     /// The original url.
     /// </summary>
     public string OriginalUrl { get; set; } = default!;
+
+    /// <summary>
+    /// The short url.
+    /// </summary>
+    public int ShortUrl { get; set; } = default!;
 
     #endregion
 }
